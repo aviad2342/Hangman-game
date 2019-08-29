@@ -1,0 +1,17 @@
+<div [className]="disabledAll">
+    <div class="row justify-content-md-center">
+      <div class="keyboard center-items board" *ngFor="let Keys1 of firstSetOfKeys; let i = index">
+        <button class="btn btn-secondary" [disabled]="lettersDisabled.includes(Keys1)" (click)="getKye(Keys1)" onClick="this.disabled=true;" value="Keys1">{{Keys1}}</button>
+    </div>
+  </div>
+  <div class="row justify-content-md-center">
+      <div class="keyboard center-items board" *ngFor="let Keys2 of secondSetOfKeys; let i = index">
+        <button class="btn btn-secondary btn-circle" [disabled]="lettersDisabled.includes(Keys2)" (click)="getKye(Keys2)" onClick="this.disabled=true;" value="Keys2">{{Keys2}}</button>
+    </div>
+  </div>
+  <div class="row justify-content-md-center">
+      <div class="keyboard center-items board" *ngFor="let Keys3 of thirdSetOfKeys; let i = index">
+        <button class="btn btn-secondary btn-circle" [disabled]="lettersDisabled.includes(Keys3)" (click)="getKye(Keys3)" onClick="this.disabled=true;" value="Keys3">{{Keys3}}</button>
+    </div>
+  </div>
+</div>

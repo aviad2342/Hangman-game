@@ -1,0 +1,38 @@
+.btn-container {
+    background: #2271BF;
+    box-shadow: 0 14px 12px 0 rgba(0,0,0,0.15);
+    border-radius: 16px;
+    width: 152px;
+    height: 75px;
+}
+
+.btn {
+    padding-top: 5px;
+    font-size: xx-large;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.bottom-right { 
+    bottom: 0; 
+    right: 0; 
+} 
+.status-img {
+    position: absolute;
+    left: 818px;
+    top: 126px;
+    width: 150px;
+    height: 410px;
+}
+
+.won {
+    padding-top: 5px;
+    color: green;
+}
+
+.lost {
+    padding-top: 5px;
+    color: rgb(226, 11, 11);
+}

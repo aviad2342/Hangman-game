@@ -1,0 +1,29 @@
+.letters-underline {
+    border-bottom: 4px solid #000;
+    padding-bottom: 10px;
+    font-family: Arial-BoldMT;
+    font-size: 40px;
+    color: #0E0F0F;
+    letter-spacing: 0;
+    text-align: center;
+    width: 32px;
+    height: 44px;
+}
+
+.col-game {
+    flex-grow: 0;
+    right: 0;
+    left: 0;
+}
+
+.black-letters {
+    color: #0E0F0F;
+}
+
+.blue-letters {
+    color: rgb(17, 13, 228);
+}
+
+.tryhard {
+    background-image: url('/assets/blue.png');
+}

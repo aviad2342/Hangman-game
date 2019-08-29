@@ -1,0 +1,9 @@
+<div class="text-center" *ngIf="gameIsOver">
+  <img [src]="outcomes" alt="">
+  <div class="justify-content-md-center" *ngFor="let line of statusText">
+      <div class="col center-items">  
+         <h2 [className]="endClass">{{line}}</h2>
+      </div>
+  </div>
+      <button class="btn btn-primary bottom-right" (click)="tryAgain()">AGAIN</button>
+</div>
