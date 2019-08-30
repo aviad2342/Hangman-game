@@ -1,21 +1,14 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <div class="row justify-content-md-center row-game">
-      <div *ngFor="let letter of selectedMovieToLetters; let i = index">
-          <div class="col center-items col-game">  
-              <span [className]="getClass(letter)"><h3 *ngIf="selectedLetters.includes(letter)">{{letter}}</h3><i *ngIf="letter !== ' '" class="fa fa-minus"></i></span>
-          </div>
-      </div>
 
-    <!-- <div *ngFor="let letter of selectedMovieToLetters; let i = index">
-      <div class="col center-items col-game"  *ngIf="letter !== ' '">
-          <div class="row" *ngIf="letter === ' '">
-          <p [className]="letter === ' ' ? '' : 'letters-underline'">{{ letter }}</p>
-          <span><p [className]="initializeLetters.includes(letter) ? 'blue-letters' : 'black-letters'" *ngIf="selectedLetters.includes(letter)">{{ letter }}<i class="fa fa-window-minimize"></i></span>
-          <span><p>{{ letter }}</p><a *ngIf="letter !== ' '"></a></span>
-          <span style="white-space: pre-line" *ngIf="letter === ' '"></span>
-          <h3 class="md-color-blue-900">{{ letter }}<hr></h3>
-        </div>
-    </div>
-  </div>
-  </div> -->
+<div class="table-responsive">
+<table class="table-borderless justify-content-md-center">
+    <tbody>
+      <tr class="justify-content-md-center" *ngFor="let lett of selectedMovieToDisplay; let i = index">
+        <th [ngClass]="{'myth': initializeLetters.includes(letter)}" class="col-md-2 col-xs-6" *ngFor="let letter of lett.Letters">
+            <p [className]="getClass(letter)" *ngIf="selectedLetters.includes(letter)">{{letter}}</p>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 

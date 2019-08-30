@@ -10,6 +10,41 @@
     height: 44px;
 }
 
+ table th {
+    text-align: center;
+    height: 35px;
+    vertical-align: middle;
+    border-spacing: 1em .5em;
+    min-width: 45px;
+ }
+
+ tr {
+     text-align: center;
+ }
+ th:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 3px solid black;
+}
+
+.myth:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 3px solid blue;
+}
+
+ p {
+     margin-bottom: 3px;
+ }
+
 .col-game {
     flex-grow: 0;
     right: 0;
